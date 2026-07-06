@@ -23,10 +23,10 @@ jobs:
 
       - name: Generar EXE
         run: |
-          pyinstaller --onefile --windowed main.py
+          pyinstaller --onefile --windowed CalculadoraMezclas.py
 
       - name: Subir ejecutable
         uses: actions/upload-artifact@v4
         with:
           name: CalculadoraMezclas-Windows
-          path: dist/main.exe
+          path: dist/CalculadoraMezclas.exe
